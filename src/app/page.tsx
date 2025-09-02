@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { differenceInDays } from 'date-fns';
+import { differenceInCalendarDays } from 'date-fns';
 import { TARGET_DATE } from "../utils/constants";
 import Confetti from 'react-confetti';
 
 export default function Home() {
   const today = new Date();
-  const daysRemaining = differenceInDays(TARGET_DATE, today);
+  const daysRemaining = differenceInCalendarDays(TARGET_DATE, today);
 
   const message = daysRemaining <= 0
     ? "O Chagas chegou!"

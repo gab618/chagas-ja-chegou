@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { differenceInDays } from "date-fns";
+import { differenceInCalendarDays } from "date-fns";
 import { TARGET_DATE } from "../utils/constants";
 import "./globals.css";
 
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const today = new Date();
-const daysRemaining = differenceInDays(TARGET_DATE, today);
+const daysRemaining = differenceInCalendarDays(TARGET_DATE, today);
 
 export const metadata: Metadata = {
   title: "Chagas já chegou?",

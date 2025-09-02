@@ -1,1 +1,1 @@
-export const TARGET_DATE = new Date(2025, 8, 22); // 16 de setembro de 2025
+export const TARGET_DATE = new Date(2025, 8, 22); 
