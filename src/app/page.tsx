@@ -28,9 +28,7 @@ export default function Home() {
             priority
           />
         </div>
-        <h1 className="text-center text-white text-4xl font-bold">
-          {message}
-        </h1>
+        <h1 className={`text-center text-4xl font-bold ${showConfetti ? 'bg-gradient-to-r from-blue-500 via-green-500 to-pink-500 bg-clip-text text-transparent animate-rainbow' : 'text-white'}`}>{message}</h1>
       </main>
       <footer className="row-start-3 text-center text-sm text-gray-500 mt-auto">
         Feito com 💙 pelo Sonic
