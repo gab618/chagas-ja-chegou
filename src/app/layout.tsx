@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chagas já chegou?",
     description: `Faltam ${daysRemaining} dias para o Chagas chegar!`,
-    url: "https://seulink.com", // Substitua pelo link real
+    url: "https://chagas-ja-chegou.vercel.app",
     siteName: "Chagas Countdown",
     images: [
       {
-        url: "/fck.gif", // Substitua pela imagem desejada
-        width: 800,
-        height: 600,
-        alt: "Contagem regressiva para o Chagas",
+        url: "/favicon.ico",
+        width: 64,
+        height: 64,
+        alt: "Ícone de explosão",
       },
     ],
     locale: "pt_BR",
