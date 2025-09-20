@@ -14,6 +14,7 @@ export default function Home() {
     : `Faltam ${daysRemaining} dias para o Chagas chegar!`;
 
   const showConfetti = daysRemaining <= 0;
+  const imageSrc = showConfetti ? '/bad_chagas.png' : '/fck.gif';
 
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -21,7 +22,7 @@ export default function Home() {
         {showConfetti && <Confetti />}
         <div className="flex flex-col items-center">
           <Image
-            src="/fck.gif"
+            src={imageSrc}
             alt="Next.js logo"
             width={180}
             height={38}
